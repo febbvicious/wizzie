@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en" class="max-xl:text-[90%] max-lg:text-[75%]">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- My Style -->
+        <link rel="stylesheet" href="css/style.css" />
+        <!-- My Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+        <title>Wizzie</title>
+    </head>
+    <body>
+        <nav id="navbar" class="w-full flex justify-between py-4 px-[10%] text-[#ffffff] fixed z-[999] shadow-typedream">
+            <div id="icon" class="flex gap-[1rem] mt-[0.5rem]">
+                <div class="image rounded-full"><img src="./img/icons/airplane-around-earth 1.png" alt="#icons"></div>
+                <div class="font-bold text-2xl">Wizzie</div>
+            </div>
+            <div id="navbar-group" class="mt-[0.5rem] max-md:bg-[#ffffff] max-md:absolute max-md:top-[4.5rem] max-md:left-0 max-md:px-[10%] max-md:py-8 max-md:shadow-typedream max-md:w-full max-md:h-screen max-md:scale-y-0 transition">
+                <ul class="flex gap-[2.5rem] font-semibold max-md:flex-col max-md:gap-12 max-md:text-2xl max-md:text-[#000]">
+                    <li><a href="#">Hotels</a></li>
+                    <li><a href="#">Destinations</a></li>
+                    <li><a href="#">Rentals</a></li>
+                    <li><a href="#">Flights</a></li>
+                </ul>
+            </div>
+            <div id="navbar-extra" class="font-semibold flex gap-[1rem] items-center">
+                <button id="sign-up" class="hover:bg-[#ffffff] hover:text-[#000] p-2 rounded-[3px] transition">Sign up</button>
+                <button id="sign-in" class="hover:bg-[#ffffff] hover:text-[#000] p-2 rounded-[3px] transition">Sign in</button>
+                <div id="hamburger" class="bg-[#ffffff] hidden max-md:block rounded-xl cursor-pointer"><img src="/public/img/icons/hamburger.png" alt="hamburger"></div>
+            </div>
+        </nav>
+        <section id="hero" class = "w-full h-screen bg-no-repeat bg-cover bg-center text-[#ffffff] flex justify-between bg-fixed" style="background-image:url(/public/img/images/hero.png);">
+            <div id="hero-info" class="w-[45%] my-auto px-[10%]">
+                <h1 class="text-[1.4rem] font-semibold">Svalbard</h1>
+                <h2 class="text-[5.4rem] font-bold">NORWAY</h2>
+                <p class="text-[1rem]">
+                    Norway is a Scandinavian country encompassing mountains, glaciers
+                    and deep coastal fjords. Oslo, the capital, is a city of green spaces and
+                    many extraordinary museums.
+                </p>
+                <button class="flex bg-[#4B5DFF] text-[#ffffff] font-bold text-[1rem] p-2 rounded-[4px] mt-8 cursor-pointer">Explore <img src="/public/img/icons/arrow-right.png" alt="arrow" class="my-auto pl-1"></button>
+            </div>
+            <div id="hero-slider" class="w-[55%] my-[auto] py-8">
+                <div id="slider-screen" class="flex justify-center gap-[1rem]">
+                    <div class="w-[14rem] h-[21rem] rounded-[8px] bg-no-repeat bg-cover bg-center p-4 " style="background-image: url(/public/img/images/card1.png);">
+                        <div class="w-[2.5rem] h-[2.5rem] rounded-full bg-[#ffffff] flex justify-center items-center ml-[80%]"><img src="/public/img/icons/like.png" alt="like" class="w-[50%] h-[50%] "></div>
+                        <div class="mt-[95%]">
+                            <h3 class="text-[0.75rem] font-semibold">Santorini</h3>
+                            <h4 class="text-[1.45rem] font-semibold">Greece</h4>
+                            <div id="rate" class="flex gap-1">
+                                <img src="img/icons/star.png" alt="star">
+                                <img src="img/icons/star.png" alt="star">
+                                <img src="img/icons/star.png" alt="star">
+                                <img src="img/icons/star.png" alt="star">
+                                <img src="img/icons/star.png" alt="star">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-[14rem] h-[21rem] rounded-[8px] bg-no-repeat bg-cover bg-center p-4" style="background-image: url(/public/img/images/card2.png);">
+                        <div class="w-[2.5rem] h-[2.5rem] rounded-full bg-[#ffffff] flex justify-center items-center ml-[80%]"><img src="/public/img/icons/like.png" alt="like" class="w-[50%] h-[50%] "></div>
+                        <div class="mt-[95%]">
+                            <h3 class="text-[0.75rem] font-semibold">Chumphon</h3>
+                            <h4 class="text-[1.45rem] font-semibold">Thailand</h4>
+                            <div id="rate" class="flex gap-1">
+                                <img src="img/icons/star.png" alt="star">
+                                <img src="img/icons/star.png" alt="star">
+                                <img src="img/icons/star.png" alt="star">
+                                <img src="img/icons/star.png" alt="star">
+                                <img src="img/icons/star.png" alt="star">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-[14rem] h-[21rem] rounded-[8px] bg-no-repeat bg-cover bg-center p-4 max-lg:hidden" style="background-image: url(/public/img/images/card1.png);">
+                        <div class="w-[2.5rem] h-[2.5rem] rounded-full bg-[#ffffff] flex justify-center items-center ml-[80%]"><img src="/public/img/icons/like.png" alt="like" class="w-[50%] h-[50%] "></div>
+                        <div class="mt-[95%]">
+                            <h3 class="text-[0.75rem] font-semibold">Santorini</h3>
+                            <h4 class="text-[1.45rem] font-semibold">Greece</h4>
+                            <div id="rate" class="flex gap-1">
+                                <img src="img/icons/star.png" alt="star">
+                                <img src="img/icons/star.png" alt="star">
+                                <img src="img/icons/star.png" alt="star">
+                                <img src="img/icons/star.png" alt="star">
+                                <img src="img/icons/star.png" alt="star">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div id="slider-buttons" class="flex gap-4">
+                    <div class="w-[2.25rem] h-[2.25rem] bg-[#c8c8c8] rounded-full flex justify-center">
+                        <button><img src="img/icons/arrow-left.png" alt="left"></button>
+                    </div>
+                    <div class="w-[2.25rem] h-[2.25rem] bg-[#c8c8c8] rounded-full flex justify-center">
+                        <button><img src="img/icons/arrow-right.png" alt="left"></button>
+                    </div> 
+                </div> -->
+            </div>
+        </section>
+        <section id="information" class= "mt-20 px-[10%]">
+            <div id="info-wrapper" class="flex justify-around items-center p-8 shadow-typedream rounded-2xl">
+                <div class="flex gap-4">
+                    <div class="w-[3.5rem] h-[3.5rem] rounded-full flex justify-center items-center bg-[#c8c8c8]">
+                        <img src="/public/img/icons/location.png" alt="location" class="w-[50%] h-[50%]">
+                    </div>
+                    <div>
+                        <h3 class="text-[1rem] text-[#909090]">Destination</h3>
+                        <h4 class="text-blue-600 text-[1.2rem]">Paris,France</h4>
+                    </div>
+                </div>
+                <div class="flex gap-4">
+                    <div class="w-[3.5rem] h-[3.5rem] rounded-full flex justify-center items-center bg-[#c8c8c8]">
+                        <img src="/public/img/icons/dollar.png" alt="location" class="w-[50%] h-[50%]">
+                    </div>
+                    <div>
+                        <h3 class="text-[1rem] text-[#909090]">Average price</h3>
+                        <h4 class="text-blue-600 text-[1.2rem]">$350 - $1700</h4>
+                    </div>
+                </div>
+                <div class="flex gap-4">
+                    <div class="w-[3.5rem] h-[3.5rem] rounded-full flex justify-center items-center bg-[#c8c8c8]">
+                        <img src="/public/img/icons/calendar.png" alt="location" class="w-[50%] h-[50%]">
+                    </div>
+                    <div>
+                        <h3 class="text-[1rem] text-[#909090]">Trip date</h3>
+                        <h4 class="text-blue-600 text-[1.2rem]">Jun, 16 2022</h4>
+                    </div>
+                </div>
+                <button class="flex bg-[#4B5DFF] text-[#ffffff] font-bold text-[1rem] rounded-[4px] cursor-pointer leading-[3.5rem] px-4"><img src="/public/img/icons/search.png" alt="search" class="my-auto mr-1"> Find trip</button>
+            </div>
+        </section>
+        <section id="offers" class="px-[10%] mt-20">
+            <div id="info-offers" class="flex justify-between">
+                <div id="title-offers">
+                    <h2 class="text-[1.75rem] font-bold">Featured offers</h2>
+                    <p class="text-[1rem]">Promotions, deals, and many special offers for you</p>
+                </div>
+                <a href="#" class="text-[1rem] font-bold hover:border-b-2 hover:border-black h-[1.5rem] duration-200">Show all</a>
+            </div>
+            <div id="offers-wrapper" class="mt-14 flex justify-between">
+                <div class="offers-card flex shadow-typedream w-[calc(47.5%)] rounded-xl">
+                    <div class="offers-card__image">
+                        <img src="/public/img/images/offers1.png" alt="offers1" class="w-[100%] h-[100%] object-cover rounded-l-xl">
+                    </div>
+                    <div class="offers-card__desc flex flex-col justify-center p-4">
+                        <h3 class="text-[1.2rem] font-bold">Escape for a while</h3>
+                        <p class="text-[1rem]">
+                            Enjoy the freedom of traveling of monthly
+                            stay only on Wizzie!
+                        </p>
+                        <button class="bg-[#4B5DFF] text-[#ffffff] font-bold text-[1rem] p-2 rounded-[4px] mt-4 cursor-pointer w-[9.4rem]">Discover Deals</button> 
+                    </div>
+                </div>
+                <div class="offers-card flex shadow-typedream w-[calc(47.5%)] rounded-xl">
+                    <div class="offers-card__image">
+                        <img src="/public/img/images/offers2.png" alt="offers1" class="w-[100%] h-[100%] object-cover rounded-l-xl">
+                    </div>
+                    <div class="offers-card__desc flex flex-col justify-center p-4">
+                        <h3 class="text-[1.2rem] font-bold">Get 20% discount</h3>
+                        <p class="text-[1rem]">
+                            In this summer, make your dreams come
+                            true by saving 20% discount.
+                        </p>
+                        <button class="bg-[#4B5DFF] text-[#ffffff] font-bold text-[1rem] p-2 rounded-[4px] mt-4 cursor-pointer w-[9.4rem]">Discover Deals</button> 
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="discover" class="px-[10%] mt-20">
+            <div id="info-discover" class="flex justify-between">
+                <div id="title-offers">
+                    <h2 class="text-[1.75rem] font-bold">Discover <span class="text-[#485dff]">Switzerland</span></h2>
+                    <p class="text-[1rem]">These popular destinations have a lot to offer you</p>
+                </div>
+                <a href="#" class="text-[1rem] font-bold hover:border-b-2 hover:border-black h-[1.5rem] duration-200">Show all</a>
+            </div>
+            <div id="discover-wrapper" class="flex mt-14 justify-between">
+                <div class="discover-card w-[calc(23%)] shadow-typedream">
+                   <div class="discover-card__image relative">
+                        <img src="/public/img/images/seealpseea.png" alt="#" class="w-[100%]">
+                        <div class="discover-card__icon absolute top-3 right-3 w-[2.5rem] h-[2.5rem] rounded-full bg-[#ffffff] flex justify-center items-center"><img src="/public/img/icons/like.png" alt="like" class="w-[50%] h-[50%] "></div>
+                        <div class="discover-card__extra bg-[#ff2222] text-[#ffff] text-[0.75rem] font-semibold w-[4rem] h-[1.5rem] text-center leading-[1.5rem] rounded-[4px] absolute bottom-2 left-2">Favorite</div>
+                    </div>
+                   <div class="discover-card__desc p-4">
+                        <h3 class="text-[1.1rem] font-bold">Seealpseea</h3>
+                        <p class="text-[0.85rem]">Schwende, Switzerland</p>
+                   </div>
+                </div>    
+                <div class="discover-card w-[calc(23%)] shadow-typedream">
+                   <div class="discover-card__image relative">
+                        <img src="/public/img/images/kandersteg.png" alt="#" class="w-[100%]">
+                        <div class="discover-card__icon absolute top-3 right-3 w-[2.5rem] h-[2.5rem] rounded-full bg-[#ffffff] flex justify-center items-center"><img src="/public/img/icons/like.png" alt="like" class="w-[50%] h-[50%] "></div>
+                        <div class="discover-card__extra bg-[#23b000] text-[#ffff] text-[0.75rem] font-semibold w-[4rem] h-[1.5rem] text-center leading-[1.5rem] rounded-[4px] absolute bottom-2 left-2">Popular</div>
+                    </div>
+                   <div class="discover-card__desc p-4">
+                        <h3 class="text-[1.1rem] font-bold">Kandersteg</h3>
+                        <p class="text-[0.85rem]">Oescinesee, Switzerland</p>
+                   </div>
+                </div>    
+                <div class="discover-card w-[calc(23%)] shadow-typedream">
+                   <div class="discover-card__image relative">
+                        <img src="/public/img/images/zurich.png" alt="#" class="w-[100%]">
+                        <div class="discover-card__icon absolute top-3 right-3 w-[2.5rem] h-[2.5rem] rounded-full bg-[#ffffff] flex justify-center items-center"><img src="/public/img/icons/like.png" alt="like" class="w-[50%] h-[50%] "></div>
+                        <div class="discover-card__extra bg-[#ff2222] text-[#ffff] text-[0.75rem] font-semibold w-[4rem] h-[1.5rem] text-center leading-[1.5rem] rounded-[4px] absolute bottom-2 left-2">Favorite</div>
+                    </div>
+                   <div class="discover-card__desc p-4">
+                        <h3 class="text-[1.1rem] font-bold">Zurich Canton</h3>
+                        <p class="text-[0.85rem]">Zurich, Switzerland</p>
+                   </div>
+                </div>    
+                <div class="discover-card w-[calc(23%)] shadow-typedream">
+                   <div class="discover-card__image relative">
+                        <img src="/public/img/images/oberhofen.png" alt="#" class="w-[100%]">
+                        <div class="discover-card__icon absolute top-3 right-3 w-[2.5rem] h-[2.5rem] rounded-full bg-[#ffffff] flex justify-center items-center"><img src="/public/img/icons/like.png" alt="like" class="w-[50%] h-[50%] "></div>
+                        <div class="discover-card__extra bg-[#23b000] text-[#ffff] text-[0.75rem] font-semibold w-[4rem] h-[1.5rem] text-center leading-[1.5rem] rounded-[4px] absolute bottom-2 left-2">Popular</div>
+                    </div>
+                   <div class="discover-card__desc p-4">
+                        <h3 class="text-[1.1rem] font-bold">Oberhofen</h3>
+                        <p class="text-[0.85rem]">Oberhofen, Switzerland</p>
+                   </div>
+                </div>    
+            </div>
+        </section>
+        <section id="destination" class="px-[10%] mt-20">
+            <div id="info-destination" class="flex justify-between">
+                <div id="title-destination">
+                    <h2 class="text-[1.75rem] font-bold">Destinations not to be Missed</h2>
+                    <p class="text-[1rem]">Don’t miss these amazing destinations around the world</p>
+                </div>
+                <a href="#" class="text-[1rem] font-bold hover:border-b-2 hover:border-black h-[1.5rem] duration-200">Show all</a>
+            </div>
+            <div id="destination-wrapper" class="mt-14 flex justify-between">
+                <div class="destination-cards flex flex-col justify-between">
+                    <div class="destination-image relative">
+                        <img src="/public/img/images/venice.png" alt="venice" class= "w-[95%]">
+                        <div class="destination-image__icon absolute top-4 right-8 w-[2.5rem] h-[2.5rem] rounded-full bg-[#ffffff] flex justify-center items-center"><img src="/public/img/icons/like.png" alt="like" class="w-[50%] h-[50%] "></div>
+                        <div class="destination-description absolute bottom-4 left-4">
+                            <h3 class="text-[1.25rem] font-bold text-[#ffffff]">Venice</h3>
+                            <a href="#" class="flex">
+                                <div class="my-auto"><img src="/public/img/icons/location2.png" alt="location"></div>
+                                <p class="text-[#ffffff]">Venice,Italy</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="destination-image relative">
+                        <img src="/public/img/images/melchsee.png" alt="melchsee" class= "w-[95%]">
+                        <div class="destination-image__icon absolute top-4 right-8 w-[2.5rem] h-[2.5rem] rounded-full bg-[#ffffff] flex justify-center items-center"><img src="/public/img/icons/like.png" alt="like" class="w-[50%] h-[50%] "></div>
+                        <div class="destination-description absolute bottom-4 left-4">
+                            <h3 class="text-[1.25rem] font-bold text-[#ffffff]">Melchsee-Frutt</h3>
+                            <a href="#" class="flex">
+                                <div class="my-auto"><img src="/public/img/icons/location2.png" alt="location"></div>
+                                <p class="text-[#ffffff]">Kerns, Switzerland</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="destination-cards">
+                    <div class="destination-image relative">
+                        <img src="/public/img/images/mu-chang.png" alt="mu-chang" class="w-[95%]">
+                        <div class="destination-image__icon absolute top-4 right-8 w-[2.5rem] h-[2.5rem] rounded-full bg-[#ffffff] flex justify-center items-center"><img src="/public/img/icons/like.png" alt="like" class="w-[50%] h-[50%] "></div>
+                        <div class="destination-description absolute bottom-4 left-4">
+                            <h3 class="text-[1.25rem] font-bold text-[#ffffff]">Mu Chang Chai</h3>
+                            <a href="#" class="flex">
+                                <div class="my-auto"><img src="/public/img/icons/location2.png" alt="location"></div>
+                                <p class="text-[#ffffff]">Yen Bai, Vietnam</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="destination-cards flex flex-col justify-between">
+                    <div class="destination-image relative">
+                        <img src="/public/img/images/jacheon.png" alt="jacheon" class="w-[95%]">
+                        <div class="destination-image__icon absolute top-4 right-8 w-[2.5rem] h-[2.5rem] rounded-full bg-[#ffffff] flex justify-center items-center"><img src="/public/img/icons/like.png" alt="like" class="w-[50%] h-[50%] "></div>
+                        <div class="destination-description absolute bottom-4 left-4">
+                            <h3 class="text-[1.25rem] font-bold text-[#ffffff]">Jecheon-si</h3>
+                            <a href="#" class="flex">
+                                <div class="my-auto"><img src="/public/img/icons/location2.png" alt="location"></div>
+                                <p class="text-[#ffffff]">South Korea</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="destination-image relative">
+                        <img src="/public/img/images/daigo.png" alt="daigo" class="w-[95%]">
+                        <div class="destination-image__icon absolute top-4 right-8 w-[2.5rem] h-[2.5rem] rounded-full bg-[#ffffff] flex justify-center items-center"><img src="/public/img/icons/like.png" alt="like" class="w-[50%] h-[50%] "></div>
+                        <div class="destination-description absolute bottom-4 left-4">
+                            <h3 class="text-[1.25rem] font-bold text-[#ffffff]">Daigo-ji</h3>
+                            <a href="#" class="flex">
+                                <div class="my-auto"><img src="/public/img/icons/location2.png" alt="location"></div>
+                                <p class="text-[#ffffff]">Kyoto, Japan</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </section>
+        <section id="form-subs" class="bg-[#0F2636] mt-48 h-[27.5rem] w-full">
+            <div class="form-wrapper relative flex px-[10%] py-8 w-full">
+                <div class="form-content w-[calc(50%)]">
+                    <h2 class="text-[2.5rem] font-bold text-[#ffffff]">
+                        Your perfect adventure
+                        experience only on Wizzie!
+                    </h2>
+                    <p class="text-[1.4rem] font-semibold text-[#ffffff]">Sign up and we’ll send the best deals to you.</p>
+                    <form action="#" class="w-[32.9rem] bg-[#ffffff] flex justify-between p-0 rounded-xl mt-14 max-lg:w-[27rem] max-lg:mt-9">
+                        <input type="text" placeholder="Enter your email" class=" bg-[#ffffff] outline-none py-2 px-4 rounded-xl w-[100%]">
+                        <button class="flex bg-[#4B5DFF] text-[#ffffff] font-bold text-[1rem] rounded-xl cursor-pointer leading-[3.5rem] px-8">Subscribe</button>
+                    </form>
+                </div>
+                <div class="form-image w-[calc(50%)] absolute -top-28 -right-0 max-xl:-top-[5.3rem]">
+                    <img src="/public/img/images/subscribe-img.png" alt="images" class="m-auto max-xl:w-[24rem]">
+                </div>
+            </div>
+        </section>
+        <section id="explore" class="px-[10%] mt-20">
+            <div id="info-explore" class="flex justify-between">
+                <div id="title-explore">
+                    <h2 class="text-[1.75rem] font-bold">Explore by Property Type</h2>
+                    <p class="text-[1rem]">Browse  destinations in different property categories</p>
+                </div>
+                <a href="#" class="text-[1rem] font-bold hover:border-b-2 hover:border-black h-[1.5rem] duration-200">Show all</a>
+            </div>
+            <div id="explore-wrapper" class="flex mt-14 justify-between">
+                <div class="explore-card w-[calc(23%)] shadow-typedream">
+                   <div class="discover-card__image relative">
+                        <img src="/public/img/images/hotels.png" alt="#" class="w-[100%]">
+                    </div>
+                   <div class="discover-card__desc p-4">
+                        <h3 class="text-[1.1rem] font-bold">Hotels</h3>
+                        <div class="flex">
+                            <div class="my-auto mr-1"><img src="/public/img/icons/location3.png" alt="loc"></div>
+                            <p class="text-[0.85rem]">820.324,Hotels</p>
+                        </div>
+                   </div>
+                </div>   
+                <div class="explore-card w-[calc(23%)] shadow-typedream">
+                    <div class="discover-card__image relative">
+                         <img src="/public/img/images/apart.png" alt="#" class="w-[100%]">
+                     </div>
+                    <div class="discover-card__desc p-4">
+                         <h3 class="text-[1.1rem] font-bold">Apartements</h3>
+                         <div class="flex">
+                             <div class="my-auto mr-1"><img src="/public/img/icons/location3.png" alt="loc"></div>
+                             <p class="text-[0.85rem]">320.324,Apartements</p>
+                         </div>
+                    </div>
+                 </div> 
+                 <div class="explore-card w-[calc(23%)] shadow-typedream">
+                    <div class="discover-card__image relative">
+                         <img src="/public/img/images/villas.png" alt="#" class="w-[100%]">
+                     </div>
+                    <div class="discover-card__desc p-4">
+                         <h3 class="text-[1.1rem] font-bold">Villas</h3>
+                         <div class="flex">
+                             <div class="my-auto mr-1"><img src="/public/img/icons/location3.png" alt="loc"></div>
+                             <p class="text-[0.85rem]">20.324,Villas</p>
+                         </div>
+                    </div>
+                 </div>  
+                 <div class="explore-card w-[calc(23%)] shadow-typedream">
+                    <div class="discover-card__image relative">
+                         <img src="/public/img/images/rest.png" alt="#" class="w-[100%]">
+                     </div>
+                    <div class="discover-card__desc p-4">
+                         <h3 class="text-[1.1rem] font-bold">Resorts</h3>
+                         <div class="flex">
+                             <div class="my-auto mr-1"><img src="/public/img/icons/location3.png" alt="loc"></div>
+                             <p class="text-[0.85rem]">20.324,Resorts</p>
+                         </div>
+                    </div>
+                 </div>   
+            </div>
+        </section>
+        <section id="news" class="mt-20 w-full flex">
+            <div class="main-news bg-no-repeat bg-cover bg-center w-[58%] h-[37.5rem] px-[10%] pt-64 bg-fixed" style="background-image: url(/public/img/images/news.png);">
+                <div class="news-extra bg-[#ff2222] text-[#ffff] text-[0.75rem] font-semibold w-[4rem] h-[1.5rem] text-center leading-[1.5rem] rounded-[4px]">Featured</div>
+                <h2 class="ftext-[2rem] text-[#fffff] leading-tight font-bold">The 5 most unique beaches for your summer travel</h2>
+                <p class="text-[#ffffff] text-[1rem]">Pragser Wildsee in Italy is the best choice for spending your summertime.</p>
+                <button class="bg-[#4B5DFF] text-[#ffffff] font-bold text-[1rem] p-2 rounded-[4px] mt-8 cursor-pointer w-[8rem]">Read Article</button> 
+            </div>
+            <div class="latest-news w-[42%] bg-[#0f2636] px-[10%] pt-28">
+                <div id="title-news">
+                    <h2 class="text-[1.75rem] font-bold text-[#ffffff]">Latest Articles</h2>
+                    <p class="text-[1rem] text-[#ffffff]">Get amazing inspirations for your next trip</p>
+                </div>
+                <div id="latest-news__wrapper" class="mt-8 flex flex-col">
+                    <div class="flex border-b border-slate-500">
+                        <div class="news-card__image pt-5">
+                            <img src="/public/img/images/news1.png" alt="offers1" class="object-cover rounded-full">
+                        </div>
+                        <div class="news-card__desc flex flex-col justify-center p-4">
+                            <h3 class="text-[1rem] font-bold text-[#ffffff] leading-tight">7 recommended stays for your nextAustralia holiday</h3>
+                            <p class="text-[0.625rem] text-[#ffffff] mt-1">34 Maret 2022</p>
+                        </div>
+                    </div>
+                    <div class="flex border-b border-slate-500">
+                        <div class="news-card__image pt-5">
+                            <img src="/public/img/images/news2.png" alt="offers1" class="object-cover rounded-full">
+                        </div>
+                        <div class="news-card__desc flex flex-col justify-center p-4">
+                            <h3 class="text-[1rem] font-bold text-[#ffffff] leading-tight">7 recommended stays for your nextAustralia holiday</h3>
+                            <p class="text-[0.625rem] text-[#ffffff] mt-1">34 Maret 2022</p>
+                        </div>
+                    </div>
+                    <div class="flex border-b border-slate-500">
+                        <div class="news-card__image pt-5">
+                            <img src="/public/img/images/news3.png" alt="offers1" class="object-cover rounded-full">
+                        </div>
+                        <div class="news-card__desc flex flex-col justify-center p-4">
+                            <h3 class="text-[1rem] font-bold text-[#ffffff] leading-tight">7 recommended stays for your nextAustralia holiday</h3>
+                            <p class="text-[0.625rem] text-[#ffffff] mt-1">34 Maret 2022</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="connect" class="mt-20 px-[10%]">
+            <div id="info-connect" class="flex justify-between">
+                <div id="title-connect">
+                    <h2 class="text-[1.75rem] font-bold">Connect with other travelers</h2>
+                    <p class="text-[1rem]">Join these travel communities around the world</p>
+                </div>
+                <a href="#" class="text-[1rem] font-bold hover:border-b-2 hover:border-black h-[1.5rem] duration-200">Show all</a>
+            </div>
+            <div class="connect-contents flex justify-between mt-14">
+                <div class="connect-card w-[calc(32%)] shadow-typedream">
+                    <div class="connect-card__image">
+                         <img src="/public/img/images/connect.png" alt="#" class="w-[100%]">
+                     </div>
+                    <div class="connect-card__desc p-4">
+                         <h3 class="text-[1.1rem] font-bold">Traveling Discussion</h3>
+                         <p class="text-[0.85rem]">872.359 communities</p>
+                    </div>
+                </div> 
+                <div class="connect-card w-[calc(32%)] shadow-typedream">
+                    <div class="connect-card__image">
+                         <img src="/public/img/images/connect2.png" alt="#" class="w-[100%]">
+                     </div>
+                    <div class="connect-card__desc p-4">
+                         <h3 class="text-[1.1rem] font-bold">Indonesia Travelers</h3>
+                         <p class="text-[0.85rem]">72.359 communities</p>
+                    </div>
+                </div> 
+                <div class="connect-card w-[calc(32%)] shadow-typedream">
+                    <div class="connect-card__image">
+                         <img src="/public/img/images/connect3.png" alt="#" class="w-[100%]">
+                     </div>
+                    <div class="connect-card__desc p-4">
+                         <h3 class="text-[1.1rem] font-bold">More Communities</h3>
+                         <p class="text-[0.85rem]">2.872.359 communities</p>
+                    </div>
+                </div> 
+            </div>
+        </section>
+        <section id="testimony" class="mt-20 px-[10%]">
+            <div id="info-testimony" class="flex justify-between">
+                <div id="title-testimony">
+                    <h2 class="text-[1.75rem] font-bold">What our satisfied customers said</h2>
+                    <p class="text-[1rem]">Here are the testimonials from our satisfied customers</p>
+                </div>
+                <a href="#" class="text-[1rem] font-bold hover:border-b-2 hover:border-black h-[1.5rem] duration-200">Show all</a>
+            </div>
+            <div class="testimony-contents__wrapper mt-14 flex flex-wrap justify-between gap-y-5">
+                <div class="testimony-content__card w-[32%] p-4 rounded-xl shadow-typedream">
+                    <div class="testimony-content__upper flex justify-between items-center border-b border-slate-500 pb-3">
+                        <div class="testimony-card__image">
+                            <img src="/public/img/images/testimony1.png" alt="testimony1" class="object-cover rounded-full">
+                        </div>
+                        <div class="testimony-card__desc flex flex-col justify-center">
+                            <h3 class="text-[1rem] font-bold leading-tight">Regina Johnson</h3>
+                            <p class="text-[0.625rem] mt-1">American Traveller</p>
+                        </div>
+                        <div class="testimony-card__extra flex">
+                            <div><img src="/public/img/icons/star2.png" alt="star"></div>
+                            <p>4.6</p>
+                        </div>
+                    </div>
+                    <div class="testimony-content__bottom pt-3">
+                        <p class="text-[0.82rem]">
+                            I feel the ease when making choices for tourism  destinations
+                            I will choose when using Wizzie, and I also can determine where
+                            I would travel easily.
+                        </p>
+                    </div>
+                </div>
+                <div class="testimony-content__card w-[32%] p-4 rounded-xl shadow-2xl">
+                    <div class="testimony-content__upper flex justify-between items-center border-b border-slate-500 pb-3">
+                        <div class="testimony-card__image">
+                            <img src="/public/img/images/testimony2.png" alt="testimony2" class="object-cover rounded-full">
+                        </div>
+                        <div class="testimony-card__desc flex flex-col justify-center">
+                            <h3 class="text-[1rem] font-bold leading-tight">Taylor Carpenter</h3>
+                            <p class="text-[0.625rem] mt-1">American Vlogger</p>
+                        </div>
+                        <div class="testimony-card__extra flex">
+                            <div><img src="/public/img/icons/star2.png" alt="star"></div>
+                            <p>4.6</p>
+                        </div>
+                    </div>
+                    <div class="testimony-content__bottom pt-3">
+                        <p class="text-[0.82rem]">
+                            I like the services offered by Wizzie in organizing my travel trip, services that are easy to access
+                            and can solve my various kinds of trip problems. 
+                        </p>
+                    </div>
+                </div>
+                <div class="testimony-content__card w-[32%] p-4 rounded-xl shadow-2xl">
+                    <div class="testimony-content__upper flex justify-between items-center border-b border-slate-500 pb-3">
+                        <div class="testimony-card__image">
+                            <img src="/public/img/images/testimony3.png" alt="testimony3" class="object-cover rounded-full">
+                        </div>
+                        <div class="testimony-card__desc flex flex-col justify-center">
+                            <h3 class="text-[1rem] font-bold leading-tight">Budi Sudjatmiko</h3>
+                            <p class="text-[0.625rem] mt-1">Indonesian Traveller</p>
+                        </div>
+                        <div class="testimony-card__extra flex">
+                            <div><img src="/public/img/icons/star2.png" alt="star"></div>
+                            <p>4.6</p>
+                        </div>
+                    </div>
+                    <div class="testimony-content__bottom pt-3">
+                        <p class="text-[0.82rem]">
+                            Services offered by Wizzie are pretty complete, that’s why I think that Wizzie is always reliable
+                            when traveling to attractions around the world.
+                        </p>
+                    </div>
+                </div>
+                <div class="testimony-content__card w-[32%] p-4 rounded-xl shadow-2xl">
+                    <div class="testimony-content__upper flex justify-between items-center border-b border-slate-500 pb-3">
+                        <div class="testimony-card__image">
+                            <img src="/public/img/images/testimony4.png" alt="testimony4" class="object-cover rounded-full">
+                        </div>
+                        <div class="testimony-card__desc flex flex-col justify-center">
+                            <h3 class="text-[1rem] font-bold leading-tight">Juan Martinez</h3>
+                            <p class="text-[0.625rem] mt-1">Mexican Vlogger</p>
+                        </div>
+                        <div class="testimony-card__extra flex">
+                            <div><img src="/public/img/icons/star2.png" alt="star"></div>
+                            <p>4.6</p>
+                        </div>
+                    </div>
+                    <div class="testimony-content__bottom pt-3">
+                        <p class="text-[0.82rem]">
+                            It’s a shame I am a new vlogger who uses Wizzie.
+                            I feel the ease of access for traveling around the world with Wizzie as my travel-mate on my hand.
+                        </p>
+                    </div>
+                </div>
+                <div class="testimony-content__card w-[32%] p-4 rounded-xl shadow-2xl">
+                    <div class="testimony-content__upper flex justify-between items-center border-b border-slate-500 pb-3">
+                        <div class="testimony-card__image">
+                            <img src="/public/img/images/testimony1.png" alt="offers1" class="object-cover rounded-full">
+                        </div>
+                        <div class="testimony-card__desc flex flex-col justify-center">
+                            <h3 class="text-[1rem] font-bold leading-tight">Grace Williams</h3>
+                            <p class="text-[0.625rem] mt-1">American Tourist</p>
+                        </div>
+                        <div class="testimony-card__extra flex">
+                            <div><img src="/public/img/icons/star2.png" alt="star"></div>
+                            <p>4.6</p>
+                        </div>
+                    </div>
+                    <div class="testimony-content__bottom pt-3">
+                        <p class="text-[0.82rem]">
+                            It is very rare that there is an application which provides many various services like Wizzie. It is
+                            very helpful for me to travel around the world.
+                        </p>
+                    </div>
+                </div>
+                <div class="testimony-content__card w-[32%] p-4 rounded-xl shadow-2xl">
+                    <div class="testimony-content__upper flex justify-between items-center border-b border-slate-500 pb-3">
+                        <div class="testimony-card__image">
+                            <img src="/public/img/images/testimony6.png" alt="testimony6" class="object-cover rounded-full">
+                        </div>
+                        <div class="testimony-card__desc flex flex-col justify-center">
+                            <h3 class="text-[1rem] font-bold leading-tight">Mohammed Traore</h3>
+                            <p class="text-[0.625rem] mt-1">African Vlogger</p>
+                        </div>
+                        <div class="testimony-card__extra flex">
+                            <div><img src="/public/img/icons/star2.png" alt="star"></div>
+                            <p>4.6</p>
+                        </div>
+                    </div>
+                    <div class="testimony-content__bottom pt-3">
+                        <p class="text-[0.82rem]">
+                            I feel the ease when making choices for tourism  destinations
+                            I will choose when using Wizzie, and I also can determine where
+                            I would travel easily.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="w-full bg-[#0F2636] px-[10%] mt-20 pt-16 pb-8" >
+           <div class="footer-upper flex justify-between border-b border-white pb-16">
+                <div class="footer-upper__tagline w-[38%]">
+                    <div class=" footer-icon flex gap-[1rem] mb-4">
+                        <div><img src="./img/icons/airplane-around-earth 1.png" alt="#icons"></div>
+                        <div class="font-bold text-2xl text-[#ffffff]">Wizzie</div>
+                    </div> 
+                    <p class="text-[#ffffff] text-[0.875rem] leading-6">
+                        Convenience is our priority to satisfy our customers,
+                        and we also provide all the features that you can access
+                        anywhere and everywhere.
+                    </p>
+                </div>
+                <div class="footer-upper__links flex justify-end gap-x-24 w-[58%]">
+                    <ul class="text-[#ffffff] text-[0.875rem] font-bold">
+                        <li class="mb-4"><a href="#" class="text-[1.4rem]">About</a></li>
+                        <li><a href="#">How to book</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Help center</a></li>
+                    </ul>
+                    <ul class="text-[#ffffff] text-[0.875rem] font-bold">
+                        <li class="mb-4"><a href="#" class="text-[1.4rem]">Services</a></li>
+                        <li><a href="#">Destinations</a></li>
+                        <li><a href="#">Flights & Hotels</a></li>
+                        <li><a href="#">Apartements</a></li>
+                    </ul>
+                    <ul class="text-[#ffffff] text-[0.875rem] font-bold">
+                        <li class="mb-4"><a href="#" class="text-[1.4rem]">Social</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+            </div> 
+           <div class="footer-lower flex justify-between pt-6">
+                <div class="policy flex text-[0.875rem] font-bold text-[#ffffff] w-[38%] gap-4">
+                    <a href="#">Privacy Policy</a>
+                    |
+                    <a href="#">Terms and Conditions</a>
+                </div>
+                <div class="copyrights text-[0.875rem] text-[#ffffff] font-bold">
+                    <a href="#">Copyright © 2022 Wizzie</a>
+                </div>
+           </div>
+        </footer>
+
+    <script src="/public/scripts/script.js"></script>
+    </body>
+</html>
